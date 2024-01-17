@@ -1,0 +1,55 @@
+﻿@model ContactViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form asp-controller="Home" asp-action="ContactUS" method="post">
+
+    <label asp-for="Name">Name</label>
+    <br />
+    <input type="text" class="from-control" asp-for="Name" />
+
+    <br />
+
+    <label asp-for="Email">Email</label>
+    <br />
+    <input type="text" class="from-control" asp-for="Email" />
+
+    <br />
+
+    <label asp-for="Mobil">Mobile</label>
+    <br />
+    <input type="text" class="from-control" asp-for="Mobil" />
+
+    <br />
+
+    <label asp-for="Titel">Titel</label>
+    <br />
+    <input type="text" class="from-control" asp-for="Titel" />
+
+    <br />
+
+    <label asp-for="Description">Description</label>
+    <br />
+    <input type="text" class="from-control" asp-for="Description" />
+
+    <br />
+    <br />
+
+    <button class="btn btn-success"> Save</button>
+
+
+
+
+
+
+
+</form>
+
+
+
